@@ -29,10 +29,11 @@ Abrir [http://localhost:3000](http://localhost:3000) no navegador para acessar a
     - common/ (Componentes comumente utilizados nas páginas)
       - _*página*_/
         - components/ (Components específicos da página)
-        - hooks/ (Hooks utilizados pelos components)
+        - hooks/ (Hooks utilizados pelos components da página)
     - ui/ (Componentes de UI como _inputs_)
   - constantes/ (Constantes utilizadas)
   - helpers/ (Métodos de auxílio, Ex.: máscaras, formatadores, etc...)
+  - hooks/ (Hooks globais)
   - infra/
     - gateway/ (Criação das requisições à API)
     - http/ (Criação dos métodos HTTP customizados)
