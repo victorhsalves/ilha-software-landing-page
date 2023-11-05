@@ -22,6 +22,7 @@ Abrir [http://localhost:3000](http://localhost:3000) no navegador para acessar a
 
 ## Arquitetura
 
+- public/ (Arquivos públicos, aqui devem ficar as imagens)
 - src/
   - @types/ (Tipagens globais)
   - assets/ (Estilização global e itens utilizados)
