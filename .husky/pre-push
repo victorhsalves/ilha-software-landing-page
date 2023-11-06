@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+new_version=$(cat package.json | grep -o '"version": "[0-9.]*"' | cut -d : -f2 | tr -d '": ')
+
+git show HEAD~1:package.json > temp_package.json
+
+old_version=$(cat temp_package.json | grep -o '"version": "[0-9.]*"' | cut -d : -f2 | tr -d '": ')
+
+echo "Versão antiga do package.json: $old_version"
+echo "Nova versão do package.json: $new_version"
+
+package_json_diff=$(git diff --staged package.json)
+
+if [ "$old_version" != "$new_version" ]; then
+  echo "Versão do package.json foi alterada. Commit permitido."
+  exit 0
+else
+  echo "Erro: A versão do package.json não foi alterada. O commit foi bloqueado."
+  exit 1
+fi
+
+rm temp_package.json
