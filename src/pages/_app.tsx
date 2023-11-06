@@ -7,7 +7,7 @@ import { Footer, Header } from '@/components/common'
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<div 
-			className="relative flex min-h-screen flex-col items-center gap-3" 
+			className="relative flex min-h-screen min-w-[450px] flex-col items-center gap-3" 
 			style={style.bgGradient.bottomTransparent}
 		>
 			<Header />

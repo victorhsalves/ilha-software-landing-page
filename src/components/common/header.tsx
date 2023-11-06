@@ -10,13 +10,14 @@ export default function Header() {
 
 		<div 
 			className={clsx(
-				'relative h-[350px] w-full items-center justify-center', 
-				'text-7xl font-extrabold tracking-[0.75rem] lg:flex'
+				'relative flex h-[200px] w-full items-center justify-center', 
+				'text-3xl font-extrabold tracking-[0.75rem]', 
+				'md:text-7xl md:h-[350px]'
 			)}
 			style={style.bgGradient.primary}
 		>
 			<Image 
-				className="absolute"
+				className="absolute w-[150px] h-auto md:w-[300px] md:h-[300px]"
 				src="/Logo.png"
 				alt="Ilha Software Logo"
 				width={300}
