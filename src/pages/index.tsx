@@ -11,7 +11,7 @@ export default function Home() {
 				'border border-gray-300 bg-gray-100 border-neutral-700 bg-neutral-800/30'
 			)}
 		>
-			<h1 className='text-xl md:text-2xl lg:text-3xl font-extrabold text-center'>
+			<h1 className='text-xl text-white md:text-2xl lg:text-3xl font-extrabold text-center'>
 			Este site está em desenvolvimento!
 			</h1>
 			<Image 

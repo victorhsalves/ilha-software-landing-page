@@ -11,7 +11,7 @@ export default function Header() {
 		<div 
 			className={clsx(
 				'relative flex h-[200px] w-full items-center justify-center', 
-				'text-3xl font-extrabold tracking-[0.75rem]', 
+				'text-3xl text-white font-extrabold tracking-[0.75rem]', 
 				'md:text-7xl md:h-[350px]'
 			)}
 			style={style.bgGradient.primary}
@@ -24,7 +24,7 @@ export default function Header() {
 				height={300}
 				priority
 			/>
-			<h1 className='z-10 shadow-2'>
+			<h1 className='z-10 drop-shadow-md text-center'>
         Ilha Software
 			</h1>
 		</div>
